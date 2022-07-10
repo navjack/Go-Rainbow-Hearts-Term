@@ -1,6 +1,9 @@
 # Go-Rainbow-Hearts-Term
 Silly thing that fills a 160x25 terminal with hearts. Result of noodling around with GitHub CoPilot.
 
+## How to Use
+Install Golang and just go build it. Then run it in your terminal of choice. It works on any system Go does. I'd like to hear what systems people have ran this on and how it performaned.
+
 ## Notes
 Performance and results vary between OS and terminal application. Best results I've personally tested were in Hyper on MacOS. Worst was anything in Windows. Decent is the native Haiku terminal.
 
