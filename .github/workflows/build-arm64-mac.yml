@@ -24,9 +24,9 @@ jobs:
       uses: izumin5210/action-go-crossbuild@v1.0.0
       with:
         # An application name
-        name: hearts-darwin-arm64
+        name: hearts
         # Space or comma separated list of GOARCH
-        arch: arm64
+        arch: arm64,amd64
         # Path to destination directory of built binaries
         #dest:
         # `-ldflags` to pass to go build
@@ -34,19 +34,19 @@ jobs:
         # `-tags` to pass to go build
         #tags: # optional, default is 
         # Space or comma separated list of GOOS
-        os: darwin
+        os: darwin,linux,windows
         # Build target package
         #package: # optional, default is .
         # Version of github.com/Songmu/goxz
         #goxz-version: # optional, default is v0.4.1
-    - name: Download a Build Artifact
-      uses: actions/download-artifact@v3.0.0
-      with:
+    #- name: Download a Build Artifact
+      #uses: actions/download-artifact@v3.0.0
+      #with:
         # Artifact name
-        name: hearts-darwin-arm64
+        #name: hearts-darwin-arm64
         # Destination path
         #path: # optional
     
-    - name: Build
-      run: go build -v hearts.go -o hearts-darwin-arm64
+    #- name: Build
+      #run: go build -v hearts.go -o hearts-darwin-arm64
       
