@@ -20,12 +20,3 @@ jobs:
         
     - name: Build
       run: env GOOS=darwin GOARCH=arm64 go build -o hearts-darwin-arm64 -v hearts.go
-      
-    - name: Download a Build Artifact
-      uses: actions/download-artifact@v3.0.0
-      with:
-        # Artifact name
-        name: hearts-darwin-arm64
-        # Destination path
-        #path: # optional
-        
