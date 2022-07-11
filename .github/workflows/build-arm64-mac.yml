@@ -19,7 +19,7 @@ jobs:
         go-version: 1.18
         
     - name: Build
-      run: env GOOS=darwin GOARCH=arm64 go build -o hearts-darwin-arm64 -v main.go
+      run: env GOOS=darwin GOARCH=arm64 go build -o hearts-darwin-arm64 -v hearts.go
       
     - name: Download a Build Artifact
       uses: actions/download-artifact@v3.0.0
